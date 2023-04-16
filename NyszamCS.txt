@@ -1,0 +1,11 @@
+    internal class Nyszam
+    {
+        public int szam;
+        public int db;
+
+        public Nyszam(int szam, int db)
+        {
+            this.db = db;
+            this.szam = szam;
+        }
+    }

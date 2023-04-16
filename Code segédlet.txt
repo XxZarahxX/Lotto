@@ -1,0 +1,37 @@
+      //Beolvasás másképp:
+            List<NPC> npc_list = new List<NPC>();
+            string[] lines = File.ReadAllLines("npcs.txt");
+            foreach (var item in lines)
+            {
+                string[] values = item.Split(',');
+                NPC npc_object = new NPC(values[0], values[1], int.Parse(values[2]), bool.Parse(values[3]));
+                npc_list.Add(npc_object);
+            }
+
+            foreach (var item in npc_list)
+            {
+                Console.WriteLine($"{item.name} {item.race} hp: {item.hp} immortal: {item.immortal}");
+            }
+
+
+	### LOTTOS ###
+
+            List<Sorsolas> Sorsolas_list = new List<Sorsolas>();
+            string[] lines = File.ReadAllLines("sorsolas.txt");
+            foreach (var item in lines)
+            {
+                string[] values = item.Split(';');
+                Sorsolas sorsolas_object = new Sorsolas(values[0], values[1], values[2], values[3], values[4], values[5],));
+                sorsolas_list.Add(sorsolas_object);
+            }
+
+            foreach (var item in sorsolas_list)
+            {
+                Console.WriteLine($"{item.name} {item.race} hp: {item.hp} immortal: {item.immortal}");
+            }
+
+
+páros
+f(item.szam%2==0)
+páratlan:
+f(item.szam%2==1)
